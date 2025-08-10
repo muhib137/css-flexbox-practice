@@ -7,3 +7,39 @@
 body {
   font-family: system-ui;
 }
+
+.exercise {
+  width: 95%;
+  border: 2px solid #ccc;
+  height: 400px;
+  margin: 20px auto;
+}
+
+.title {
+  position: absolute;
+  font-size: 26px;
+  font-weight: 500;
+  left: 50%;
+  top: -3px;
+  transform: translateX(-50%);
+  background-color: springgreen;
+  padding: 5px;
+  color: #444;
+}
+
+.box {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #ccc;
+  background-color: crimson;
+  color: #eee;
+}
+
+
+/* EXERCISE 1 SOLUTION */
+.exercise:nth-of-type(1){
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
