@@ -131,7 +131,7 @@ body {
   font-weight: 500;
 }
 
-.img {
+.card .img {
   background-color: #ccc;
   height: 100px;
   color: #aaa;
@@ -205,16 +205,16 @@ body {
   border-radius: 0.5em;
 }
 
-.btn:hover{
+.btn:hover {
   cursor: pointer;
 }
 
-.btn--continue{
+.btn--continue {
   background-color: dodgerblue;
   color: #fff;
 }
 
-.btn--continue:hover{
+.btn--continue:hover {
   background-color: #fff;
   color: dodgerblue;
   border: 1px solid dodgerblue;
@@ -226,3 +226,76 @@ body {
   border: 1px solid #ccc;
 }
 
+/* EXERCISE 6: FLEX LAYOUT */
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen img {
+  max-width: 100%;
+}
+
+.screen main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  align-items: center;
+  align-self: center;
+}
+.screen form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  gap: 8px;
+}
+
+.screen input {
+  align-self: stretch;
+  border-radius: 2000px;
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+}
+
+.screen button{
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 2px 5px;
+  border-radius: 0.3em;
+  color: #333;
+}
+.screen button:hover{
+  background-color: #ccc;
+  cursor: pointer;
+  color: #444;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.links a:link {
+  text-decoration: none;
+  color: #777;
+  font-size: 14px;
+}
+
+.screen header,
+.screen footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.screen footer {
+  background-color: #eee;
+}
