@@ -229,9 +229,6 @@ body {
 /* EXERCISE 6: FLEX LAYOUT */
 
 .screen {
-  width: 100vw;
-  height: 100vh;
-  border: 1px solid #eee;
   display: flex;
   flex-direction: column;
 }
@@ -264,14 +261,14 @@ body {
   padding: 5px 15px;
 }
 
-.screen button{
+.screen button {
   background-color: #eee;
   border: 1px solid #ccc;
   padding: 2px 5px;
   border-radius: 0.3em;
   color: #333;
 }
-.screen button:hover{
+.screen button:hover {
   background-color: #ccc;
   cursor: pointer;
   color: #444;
@@ -298,4 +295,75 @@ body {
 
 .screen footer {
   background-color: #eee;
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+/* EXERCISE 7: FLEX LAYOUT 2 */
+
+.full-screen main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.full-screen footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px 0;
+  color: rebeccapurple;
+}
+
+.full-screen header {
+  background-color: rebeccapurple;
+  padding: 10px 5px;
+  color: #fff;
+}
+
+.full-screen aside {
+  background-color: dodgerblue;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.full-screen section {
+  flex-grow: 1;
+  max-height: calc(100vh - 6rem);
+  overflow-y: scroll;
+  display: flex;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.card {
+  height: 200px;
+  width: 300px;
+  max-width: 450px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 0.3em;
+  flex-grow: 1;
+}
+
+
+.full-screen li a:link {
+  display: inline-block;
+  width: 100%;
+  flex-grow: 1;
+  text-decoration: none;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.full-screen li a:hover {
+  background-color: lightblue;
+  color: rebeccapurple;
 }
