@@ -36,9 +36,8 @@ body {
   color: #eee;
 }
 
-
 /* EXERCISE 1 SOLUTION */
-.exercise:nth-of-type(1){
+.exercise:nth-of-type(1) {
   background-color: dodgerblue;
   display: flex;
   justify-content: center;
@@ -152,3 +151,78 @@ body {
   text-align: center;
   color: #444;
 }
+
+/* EXERCISE 5: MODAL SOLUTION */
+
+.exercise:nth-of-type(5) {
+  background-color: #ccc;
+}
+
+.modal {
+  padding: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  background-color: #fff;
+  max-width: 65%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 0.3em;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.icon--excl {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: lightblue;
+  color: dodgerblue;
+}
+
+.icon--cross {
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 100%;
+}
+
+.modal__content {
+  flex-grow: 1;
+}
+
+.btn {
+  margin: 10px 0;
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  border-radius: 0.5em;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.btn--continue{
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.btn--continue:hover{
+  background-color: #fff;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+
+.btn--cancel {
+  background-color: #fff;
+  color: dodgerblue;
+  border: 1px solid #ccc;
+}
+
